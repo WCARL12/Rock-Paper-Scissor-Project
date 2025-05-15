@@ -1,13 +1,33 @@
-const rockButton = document.querySelector(".rockBtn")
-const paperButton = document.querySelector(".paperBtn")
-const scissorsButton = document.querySelector(".scissorsBtn")
+// const rockButton = document.querySelector(".rockBtn")
+// const paperButton = document.querySelector(".paperBtn")
+// const scissorsButton = document.querySelector(".scissorsBtn")
 
+const buttons = document.querySelectorAll("button")
+
+let score = {
+    playerScore: 0,
+    computerScore : 0
+}
+
+
+let playerChoice = "";
 let computerChoice = "";
 
-rockButton.addEventListener("click", () => {
+function startGame(){
+    buttons.forEach(button => {
+        button.addEventListener("click", () => {
+            
+            
+            playerChoice = button.textContent;
+            computerChoice = getComputerChoice()
+            getOutcome()
+            displayScores()
+
+        })
+    })    
+
     
-    
-})
+}
 
 function getComputerChoice(){
 
@@ -23,10 +43,35 @@ function getComputerChoice(){
         return "paper"
     }
 
+
     return "scissors"
     
 }
 
-// computerChoice = getComputerChoice()
+function getOutcome(){
+    if (playerChoice === "rock" && computerChoice === "scissors"){
+        score.playerScore += 1; 
+        console.log("You won");
+    }
+    else if (playerChoice === "paper" && computerChoice === "rock"){
+        score.playerScore += 1; 
+        console.log("You won");
+    }
+    else if (playerChoice === "scissors" && computerChoice === "paper"){
+        score.playerScore += 1; 
+        console.log("You won");
+    }
+    else if (playerChoice === computerChoice){
+        console.log("Same choices, play again"); 
+    }
+    else{
+        console.log("You lost");
+        score.computerScore += 1; 
+    }
+}
 
+function displayScores(){
+    console.log(`Player Score: ${score.playerScore}\nComputer Score: ${score.computerScore}`)
+}
 
+startGame()
