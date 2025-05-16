@@ -84,7 +84,9 @@ function displayScores(){
 
 // startGame()
 
-startButton.addEventListener("click", () => {
-    startingScreen.style.display = "none";
-    startGame()
-})
+// startButton.addEventListener("click", () => {
+//     startingScreen.style.display = "none";
+//     startGame()
+// })
+
+startGame()

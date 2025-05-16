@@ -30,8 +30,35 @@ body{
 }
 
 .player-choices{
-    display: none;
+    display: inline;
 }
-img{
+.start-screen img{
     max-width: 800px;
+}
+
+.in-game-screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;;
+    min-height: 80vh;
+    font-size: 2em;
+    
+}
+
+.in-game-screen img{
+    max-width: 220px;
+}
+
+.choices-container{
+    display: flex;
+    gap: 2em; 
+}
+.choices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1
+    em;
 }
