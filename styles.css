@@ -5,7 +5,28 @@
 }
 
 body{
+    background-color: #313133;
     min-height: 100vh;
+    color: white; 
+}
+
+.start-screen h1{
+    text-align: center;
+}
+
+.start-screen{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 1em;
+}
+.startBtn{
+    width: max-content;
+    padding: 10px 8px;
+    font-size: 1.4em;
 }
 
 .player-choices{
