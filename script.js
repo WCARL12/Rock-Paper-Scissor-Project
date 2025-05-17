@@ -6,7 +6,8 @@ const startingScreen = document.querySelector(".start-screen")
 
 
 // Get the all rock-paper-scissor buttons
-const choiceButtons = document.querySelectorAll(".player-choices")
+const choiceButtons = document.querySelectorAll(".player-choice")
+
 
 // Tracks the score of player and computer
 let score = {
@@ -23,12 +24,14 @@ let computerChoice = "";
 function startGame(){    
 
     choiceButtons.forEach(button => {
-        button.style.display = "inline";
 
         button.addEventListener("click", () => {
             
-            playerChoice = button.textContent;
+            const imageSrc = button.src.split("/").at(-1)
+
+            playerChoice = imageSrc.substring(0, imageSrc.length - 4)
             computerChoice = getComputerChoice()
+            
             getOutcome()
             displayScores()
 
@@ -80,6 +83,10 @@ function getOutcome(){
 
 function displayScores(){
     console.log(`Player Score: ${score.playerScore}\nComputer Score: ${score.computerScore}`)
+}
+
+function displaySelectedChoice(){
+    
 }
 
 // startGame()
