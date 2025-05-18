@@ -18,13 +18,16 @@
         <button class="startBtn">Start Game</button> 
     </div>
 
+    <div class="score-screen">
+        <p>Player Score: <span class="player-score"></span></p>
+        <p>Computer Score: <span class="computer-score"></span></p>
+    </div>
 
-
-    <!-- <div class="in-game-screen">
-        <div class="score-screen">
+    <div class="in-game-screen">
+        <!-- <div class="score-screen">
             <p>Player Score: <span class="player-score">0</span></p>
             <p>Computer Score: <span class="computer-score">0</span></p>
-        </div>
+        </div> -->
         <div class="main-screen">
             <h1>Make Your Selection</h1>
             <div class="choices-container">
@@ -43,40 +46,36 @@
             </div>
         </div>
         
-    </div> -->
+    </div>
 
-    <!-- <div class="selected-choices-screen">
-
-        <div class="score-screen">
-            <p>Player Score: <span class="player-score"></span></p>
-            <p>Computer Score: <span class="computer-score"></span></p>
-        </div>
+    <div class="selected-choices-screen">
         
         <div class="selection-screen">
             <div class="player-selection selection">
                 <p>Player has selected:</p>
-                <img class="selection-img" src="img/paper.png" alt="">
-                <p class="selection-text">Paper</p>
+                <img class="player-selection-img" src="" alt="">
+                <p class="player-selection-text"></p>
                
             </div>
             <div class="computer-selection selection">
                 <p>Computer has selected: </p>
-                <img class="selection-img" src="img/rock.png" alt="">
-                <p class="selection-text">Rock</p>
+                <img class="computer-selection-img" src="" alt="">
+                <p class="computer-selection-text"></p>
             </div>
         </div>
 
         <div class="outcome-text">
-            <p><span>Computer</span> has received a point!</p>
+            <p class="result"></p>
+            <button class="continue-button">Continue</button>
         </div>
 
         
-    </div> -->
+    </div>
 
-    <!-- <div class="ending-screen">
-        <p><span>X</span> has won the game!</p>
-        <button>Play Again</button>
-    </div> -->
+    <div class="ending-screen">
+        <p><span class="winner"></span> has won the game!</p>
+        <!-- <button class="play-again">Play Again</button> -->
+    </div>
 
 
     <script src="script.js"></script>

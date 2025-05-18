@@ -1,3 +1,4 @@
+/* Starting CSS styles*/
 *{
     margin: 0; 
     padding: 0;
@@ -10,6 +11,8 @@ body{
     min-height: 100vh;
     color: white; 
 }
+
+/* ====== Starting Screen CSS ======  */
 
 .start-screen h1{
     text-align: center;
@@ -35,11 +38,15 @@ body{
 .start-screen img{
     max-width: 800px;
 }
+/* ====== In-game screen CSS ====== */
+.in-game-screen{
+    display: none;
+}
 
 .score-screen{
     font-size: 1.6em;
     padding: 16px 12px;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: .2em;
 }
@@ -50,7 +57,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 4em;
-    min-height: 80vh;
+    min-height: 65vh;
     font-size: 2em;
     
 }
@@ -68,6 +75,12 @@ body{
     flex-direction: column;
     align-items: center;
     gap: 1em;
+}
+
+/* ====== What the player and computer has selected screen CSS ====== */
+
+.selected-choices-screen{
+    display: none;
 }
 
 .selection-screen{
@@ -89,10 +102,12 @@ body{
     font-size: 1.8em;
 }
 
+/*====== The ending screen CSS (who won!) ======*/
 .ending-screen{
     font-size: 1.8em;
     min-height: 90vh;
-    display: flex;
+    /* display: flex; */
+    display: none; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -103,4 +118,11 @@ body{
     margin-top: 30px;
     font-size: .7em;
     border-radius: 6px;
+}
+
+.continue-button{
+    margin-top: 20px;
+    font-size: .7em;
+    border-radius: 6px;
+    padding: 8px 10px;
 }
