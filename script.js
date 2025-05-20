@@ -38,6 +38,7 @@ const resultText = document.querySelector(".result")
 const winnerText = document.querySelector(".winner")
 
 
+const choiceList = ["rock", "paper", "scissors"]
 
 
 // Tracks the score of player and computer
@@ -69,10 +70,14 @@ function startGame(){
     console.log(score);
     
     
-    choiceButtons.forEach(button => {
+    Array.from(choiceButtons).forEach((button, index) => {
+
+        
+        
         button.addEventListener("click", () => {
-            const imageSrc = button.src.split("/").at(-1);
-            playerChoice = imageSrc.substring(0, imageSrc.length - 4);
+            
+            // Ernest Code Review :)
+            playerChoice = choiceList[index];
             computerChoice = getComputerChoice();
             
             getOutcome();
