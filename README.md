@@ -1,4 +1,4 @@
-# Advance-JavaScript-Project
+# Rock-Paper-Scissor-Project
 
 ### Summary
 For my JavaScript project, I want to create a simple rock paper scissors game. I feel it would
