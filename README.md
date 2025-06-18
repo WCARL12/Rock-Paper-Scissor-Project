@@ -14,15 +14,15 @@ choices screen, and end-game
 * Week 3: Implement the JavaScript interactivity on the website.
 
 ### Tools:
-● HTML
-● CSS
-● JavaScript
-● GitHub
+* HTML
+* CSS
+* JavaScript
+* GitHub
 
 ### Flow of the game
-1.) Have a UI for the starting screen
-2.) Make the user click a “Start” button
-3.) User select a choice (Rock Paper Scissor)
-4.) Display who wins based on Player and Computer choice
-5.) Keep repeating until either player or computer reached score of 3
+1.) Have a UI for the starting screen <br>
+2.) Make the user click a “Start” button <br>
+3.) User select a choice (Rock Paper Scissor) <br>
+4.) Display who wins based on Player and Computer choice <br>
+5.) Keep repeating until either player or computer reached score of 3 <br>
 6.) Display the winner
