@@ -8,11 +8,12 @@ to select the computer choice and changing of the screen are one of the things t
 involved in JavaScript.
 
 ### Project Timeline:
-Week 1: Regain the familiarity with JavaScript
-Week 2: Research various UI and create the starting screen, in-game screen, display
+* Week 1: Regain the familiarity with JavaScript
+* Week 2: Research various UI and create the starting screen, in-game screen, display
 choices screen, and end-game
-Week 3: Implement the JavaScript interactivity on the website.
-Tools:
+* Week 3: Implement the JavaScript interactivity on the website.
+
+### Tools:
 ● HTML
 ● CSS
 ● JavaScript
