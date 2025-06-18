@@ -1,7 +1,7 @@
 # Rock-Paper-Scissor-Project
 
-## Game Link
-Click here: 
+### Game Link
+Click here: https://wcarl12.github.io/Rock-Paper-Scissor-Project/
 
 ### Summary
 For my JavaScript project, I want to create a simple rock paper scissors game. I feel it would
