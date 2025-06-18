@@ -1,5 +1,8 @@
 # Rock-Paper-Scissor-Project
 
+## Game Link
+Click here: 
+
 ### Summary
 For my JavaScript project, I want to create a simple rock paper scissors game. I feel it would
 be beneficial to create that game because it involves a heavy amount of user interaction
